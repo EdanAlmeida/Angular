@@ -1,0 +1,30 @@
+<!--<ng-content select="h1"></ng-content>
+<div *ngIf="nome != 'Edan'">
+    <p [ngClass]="{'active': valor, 'disabled': !valor}">NgClass</p>
+    <p [ngStyle]="{'height': valorAltura, 'background': corFundo}">NgStyle</p>
+</div>
+
+<br><br><hr>
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{item.nome}}</li>
+
+<br><br><br><hr>
+<ng-template ngFor let-item [ngForOf]="list">
+    <p>{{item.nome}}</p>
+</ng-template>
+
+<br><br><hr>
+
+<ng-content slect="hr"></ng-content>
+
+<br><br><hr>-->
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{item.nome | uppercase}}</li>
+
+<p>{{data | date: 'dd/MM/yyyy'}}</p>
